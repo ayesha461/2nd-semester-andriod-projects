@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E1D5"
+    tools:context=".FrontActivity">
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="436dp"
+        android:layout_height="57dp"
+        android:background="#FFEB3B"
+        android:shadowColor="#B82020"
+        android:text="@string/select_date"
+        android:textColor="#BD1919"
+        android:textColorHint="#97988E"
+        android:textColorLink="#D61111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="108dp"
+        android:layout_height="44dp"
+        android:hint="@string/date"
+        android:textColor="#071563"
+        android:textColorHighlight="#17749E"
+        android:textColorHint="#1131DF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="214dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="137dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
